@@ -1,3 +1,7 @@
+# Link to the blog site
+https://physics-engine-r6d80i32e-viveksharma2508s-projects.vercel.app/
+
+
 ## Calculating Velocity and Position
 Acceleration, velocity, and position are closely related through calculus. Concretely speaking, velocity is the “rate of change over time” of position – in calculus, this is called the “time derivative” or simply the “derivative” for short. Think of the way we measure velocity: in miles per hour, or meters per second. Velocity is just a measure of distance travelled in a measure of time. Similarly, acceleration is just a measure of velocity changed in a measure of time.
 Every method of numerical integration for Newton’s laws involves some manner of maintaining a clock and doing calculations for tiny little snapshots in time. Game engines sometimes have the graphics engine running at 30 fps and the physics engine at 60 fps–in that case, the numerical integration is using a timestep of 1/60 seconds (16 milliseconds).
