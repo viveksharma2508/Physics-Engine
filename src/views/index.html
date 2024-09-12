@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physics Engine Blog</title>
+    <link rel ="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/component1.css">
+    <link rel="stylesheet" href="/css/component2.css">
+    <link rel="stylesheet" href="/css/component3.css">
+    <h1 style="text-align: center;">How Physics Engine Works</h1>
+</head>
+<body>
+    <!-- Include Component 1 Content -->
+    <div id="component1">
+        <h2>Component 1: Calculating Velocity and Postion</h2>
+        <!-- Canvas element for drawing -->
+        <canvas id="canvas1" width="400" height="400"></canvas>
+        <button id = "resetBtn1">Reset</button>
+    </div>
+    <p>
+        <b>This example – a ball falling from the sky under the influence of gravity and air drag – will be the only one I don’t use vectors for. I want to ease you into the process, one step at a time, so this example will only have vertical (1D) motion. You could make it 2D by simply repeating the calculations for the x-direction.</b>
+    </p>
+    <script src="/js/component1.js"></script>
+    <div id="component2"></div>
+        <h2>Component 2: Rotation</h2>
+        <!-- Canvas element for drawing -->
+        <canvas id="canvas2" width="400" height="400"></canvas>
+        <button id = "resetBtn2">Reset</button>
+    </div>
+    <p>
+        <b>This example models a rigid body rectangle. The rectangle is attached to the ceiling at one of its corners by a spring, and is allowed to fall. The spring stretches and grabs the corner, making the rectangle bounce and rotate.
+
+        There are various forces modeled in this example. The weight of the rectangle is modeled as a force. The spring is modeled as a force, and since that force is not applied to the center of the rectangle we also need to calculate a torque that will cause the rectangle to rotate. If you were to connect the spring to the center of the box, it wouldn’t spin at all (in a perfect world). I’ve also modeled viscous damping, both for translation and rotation. Viscous damping is a good way to model the various aggregate frictional losses of different materials. Our spring isn’t perfect, and so it won’t bounce forever. Viscous damping eventually causes the box to stop bouncing and spinning.</b>
+    </p>
+    <script src="/js/component2.js"></script>
+
+    <div id="component2"></div>
+    <h2>Component 3: Collison Detection</h2>
+    <!-- Canvas element for drawing -->
+    <canvas id="canvas3" width="400" height="400"></canvas>
+    <button id = "resetBtn3">Reset</button>
+</div>
+<p>
+    <b>Our final checkpoint exhibits a rotating box falling and colliding with a fixed box. While the demonstration of the separating axis theorem is complete, the collision response leaves a bit to be desired from more sophisticated techniques.</b>
+<script src="/js/component3.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+/* Apply styles to the entire page */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('/images/38afe7c5797a6bddafc060d1f9d69115.jpg'); /* Path relative to 'public' folder */
+    background-size: cover; /* Make sure the background covers the entire page */
+    background-position: center; /* Center the background image */
+    background-attachment: fixed; /* Fix the background image so it doesn't scroll */
+    color: #fff; /* Default text color for readability */
+}
+
+/* Style for the content area */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff; /* White background for the content blocks */
+    color: #000; /* Dark text color for better contrast */
+    border-radius: 10px; /* Rounded corners */
+    border: 2px solid #fff; /* White border around the blocks */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Adjusted shadow for a more subtle effect */
+}
+
+/* Style for buttons */
+button {
+    background-color: #007bff; /* Primary button color */
+    color: #fff; /* Text color on button */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
