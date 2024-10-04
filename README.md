@@ -1,5 +1,5 @@
 # Link to the blog site
-https://physics-engine-r6d80i32e-viveksharma2508s-projects.vercel.app/
+https://physics-engine-zeta.vercel.app/
 
 
 ## Calculating Velocity and Position
